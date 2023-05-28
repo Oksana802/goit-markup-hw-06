@@ -554,7 +554,6 @@ body {
 .footer {
   background-color: var(--color-navy-blue);
   padding: 100px 0 100px;
-  display: flex;
 }
 
 .footer-container {
@@ -656,11 +655,11 @@ body {
 
 .subscribe-form-btn.button {
   display: flex;
-  position: relative;
+
   flex-direction: row;
   height: 40px;
   width: 165px;
-
+  gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
 }
@@ -669,11 +668,8 @@ body {
 .subscribe-form-btn:focus {
   background-color: var(--color-green);
 }
-.subscribe-icon {
-  position: absolute;
-  top: 17%;
-  left: 117px;
-}
+/* .subscribe-icon {
+} */
 
 /* Modal window  */
 .backdrop {
@@ -727,7 +723,6 @@ body {
   width: 24px;
   height: 24px;
   padding: 0;
-  margin-bottom: 24px;
 
   background-color: #e7e9fc;
   border: 1px solid #0000001a;
@@ -767,10 +762,12 @@ body {
   margin-bottom: 16px;
   padding: 0;
 }
+.step {
+  margin-bottom: 8px;
+}
 
 .form-wrapper {
   position: relative;
-  margin-bottom: 8px;
 }
 .form-label {
   display: block;
@@ -801,6 +798,7 @@ body {
   position: absolute;
   top: 24%;
   left: 25px;
+  fill: #2e2f42;
 
   transform: translateX(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -845,7 +843,6 @@ body {
 
 .form-agreement {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 8px;
 
@@ -879,9 +876,9 @@ body {
   font-size: 12px;
 }
 .form-agreement-link {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--color-iris);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-agreement-link:focus {
   outline: 1px solid var(--color-iris);
 }
@@ -900,6 +897,7 @@ body {
   opacity: 1;
   transition: 250ms;
 }
+
 .checked {
   opacity: 0;
   transition: 250ms;
