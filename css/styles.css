@@ -258,6 +258,15 @@ body {
   border: none;
 }
 
+.menu-close-icon {
+  fill: var(--color-navy-blue);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-btn:hover > .menu-close-icon,
+.menu-close-btn:focus > .menu-close-icon {
+  fill: var(--color-white);
+}
 .mob-item:not(:last-child) {
   margin-bottom: 24px;
 }
