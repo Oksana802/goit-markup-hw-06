@@ -600,10 +600,6 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-item:hover .socials-link {
-  background-color: var(--color-ocean);
-}
-
 .card-team-bg {
   background-color: var(--color-white);
   border-radius: 0 0 4px 4px;
@@ -646,8 +642,9 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.socials-link:hover,
 .socials-link:focus {
-  background-color: var(--color-ocean);
+  background-color: var(--color-green);
 }
 
 .socials-icon {
